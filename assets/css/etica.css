@@ -1,0 +1,508 @@
+/*-------General Styles-------*/
+
+.subtitle {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 85px;
+    text-transform: uppercase;
+    color: #00AFE4;
+    text-align: center;
+    margin: 14vh auto;
+}
+
+.paragraph {
+    font-size: 24px;
+    color: #535353;
+    max-width: 800px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin: 0 50px;
+}
+
+.general-ghost-text {
+    width: 80vw;
+    position: absolute;
+    overflow: hidden;
+    font-size: 24vh;
+    font-family: 'Abril Fatface', cursive;
+    z-index: -10;
+    text-align: center;
+    color: #F1F1EF;
+    max-width: 100%;
+    text-shadow: 0px 0px 50px #DBDBDB;
+}
+
+/*-----------------------*/
+#mobile {
+    display: none;
+}
+
+/*-------Header-------*/
+.header {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 30fr 1fr;
+    background: url("../img/ethic/bg-etica-desktop.svg") no-repeat top;
+    background-size: cover;
+    box-shadow: 0px 0px 50px #DBDBDB;
+}
+
+.header-logo {
+    order: 3;
+    margin: auto;
+}
+
+.header-logo a img {
+    max-width: 100%;
+}
+
+/*Green*/
+.color-1 {
+    order: 1;
+    background: #82D803;
+    height: 90vh;
+}
+
+/*Orange*/
+.color-2 {
+    order: 2;
+    background: #FF8601;
+    height: 95vh;
+}
+
+/*Pink*/
+.color-3 {
+    order: 4;
+    background: #FF4791;
+    height: 85vh;
+}
+
+.header-logo:hover,
+.color-1:hover,
+.color-2:hover,
+.color-3:hover {
+    filter: brightness(0.9)
+}
+
+
+/*Rounding of buttons */
+.color-buttons {
+    border-radius: 0 0 100px 100px;
+
+}
+
+.vertical-text {
+    width: 1px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    margin: 40%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+/*-----------------------*/
+
+/*-------Section 1-------*/
+
+/*Section 1*/
+.container-section1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.section1-item1 {
+    margin: 0 auto;
+    text-align: start;
+}
+
+.section1-item2 {
+    margin: auto 0;
+}
+
+.ghost-text1 {
+    left: 0;
+}
+
+
+/*-----------------------*/
+
+/*Section 2*/
+.container-section2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.section2-item2 {
+    margin: 0 auto;
+    text-align: end;
+}
+
+.section2-item1 {
+    margin: auto 0;
+}
+
+.ghost-text2 {
+    right: 0;
+}
+
+/*-----------------------*/
+
+
+/*-------Footer-------*/
+.footer {
+    background: #AAAAAA;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center;
+    box-shadow: 0 50px 80px #B2B2B2;
+}
+
+.logo-footer img {
+    margin: auto;
+
+}
+
+.logo-footer::after {
+    content: "";
+    width: 500px;
+    height: 1px;
+    display: block;
+    background: #F1F1EF;
+    margin: 20px 0;
+    box-shadow: 0px 0px 1em rgb(0, 0, 0, .1);
+}
+
+.slogan-footer {
+    font-size: 18px;
+    color: #F1F1EF;
+    text-shadow: 0px 0px 1em rgb(0, 0, 0, .1);
+}
+
+.container-redes {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.icon-redes {
+    margin: 0 10px;
+    background: #F1F1EF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 1em rgb(0, 0, 0, .05);
+}
+
+.icon-redes:hover {
+    background: #fff;
+}
+
+.footer-bottom {
+    height: 75px;
+    width: 100%;
+    background: #5B5B5B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.developer-name {
+    font-size: 18px;
+    text-decoration: none;
+    font-style: normal;
+    color: #F1F1EF;
+}
+
+/*-----------------------*/
+
+/*-------Media-------*/
+@media (max-width: 1700px) {
+    .paragraph {
+        width: 600px;
+    }
+
+    /*Section 1*/
+    .section1-item2 {
+        display: flex;
+        justify-content: flex-end;
+        margin: auto 0;
+    }
+
+    .section1-item2 img {
+        width: 100%;
+    }
+
+
+    /*Section 2*/
+    .section2-item1 {
+        margin: auto 0;
+    }
+
+    .section2-item1 img {
+        width: 100%;
+    }
+}
+
+/*-----------------------*/
+
+@media (max-height: 720px) {
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .item-img img {
+        max-width: 80vh;
+    }
+
+}
+
+/*-------Mobile-------*/
+
+@media only screen and (max-width: 1024px) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: grid;
+        flex-direction: column;
+        background: #F5F5F5;
+    }
+
+    /*---------Color Header---------*/
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 80fr 1fr;
+        height: 15vh;
+    }
+
+    /*Logo*/
+    .logo-menu-mobile {
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    img.logo-menu-mobile {
+        width: 35vh;
+    }
+
+    /* - Main - Green */
+    .color-1 {
+        order: 3;
+        background: url("../img/ethic/bg-etica-mobile.png") no-repeat top;
+        background-size: contain;
+    }
+
+    /*Green*/
+    .color-2 {
+        background: #82D803;
+        order: 1;
+        height: 11vh;
+    }
+
+    /*Orange*/
+    .color-3 {
+        background: #FF8601;
+        order: 2;
+        height: 15vh;
+    }
+
+    /*Pink*/
+    .color-4 {
+        background: #FF4791;
+        order: 4;
+        height: 13vh;
+    }
+
+    .color-item {
+        border-radius: 0 0 50px 50px;
+    }
+
+    .header-logo:hover,
+    .color-1:hover,
+    .color-2:hover,
+    .color-3:hover {
+        filter: none;
+    }
+
+    /*---------------------------*/
+
+    /*---------General Styles---------*/
+    .subtitle-mobile {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bolder;
+        color: #00AFE4;
+        letter-spacing: 0.05em;
+        margin: 15px 0;
+        z-index: 5;
+
+    }
+
+    .paragraph-mobile {
+        text-align: center;
+        font-size: 16px;
+        color: #535353;
+        z-index: 5;
+        margin-bottom: 20px;
+    }
+
+    /*---------------------------*/
+
+    .container-mobile {
+        background: #F5F5F5;
+        border-radius: 50px 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 1em rgb(0, 0, 0, .1);
+
+    }
+
+    .main-title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: #00AFE4;
+        margin: 20px 0;
+    }
+
+    /*---------------------------*/
+
+    /*---------Menu---------*/
+    .menunav-mobile {
+        background: rgb(248, 248, 248, .9);
+        box-shadow: 0px 0px 1em rgb(0, 0, 0, .1);
+        border-radius: 30px 30px 0 0;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 7;
+    }
+
+    .menunav-mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 65px;
+    }
+
+    .menunav-mobile ul a {
+        font-size: 3.5vw;
+        text-align: center;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /*Colors*/
+
+    .style-tab {
+        height: 60px;
+        background: grey;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 1em rgb(0, 0, 0, .1);
+        padding: 0 8px;
+    }
+
+    .tab-sustentabilidade {
+        background: linear-gradient(150deg, #82D803, #74BF02);
+    }
+
+    .tab-saude {
+        background: linear-gradient(150deg, #FF8601, #E67700);
+    }
+
+    .tab-etica {
+        background: linear-gradient(150deg, #00AFE4, #009AC9);
+    }
+
+    .tab-assuntosgerais {
+        background: linear-gradient(150deg, #FF4791, #E64082);
+    }
+
+    /*---------------------------*/
+
+    /*---------Section 1---------*/
+    .container-mobile-section {
+        background: rgb(255, 255, 255, .5);
+        width: 85%;
+        box-shadow: 0px 0px 1em rgb(0, 0, 0, .08);
+        border-radius: 30px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        background: url("../img/ethic/vaca-mobile.png") no-repeat center right;
+    }
+
+    /*---------------------------*/
+
+    /*---------Section 2---------*/
+
+    .item-section1-mobile {
+        background: url("../img/ethic/porco-mobile.png") no-repeat center left;
+        margin-top: 50px;
+    }
+
+    /*---------------------------*/
+
+    /*---------Footer---------*/
+    .footer-mobile {
+        margin: 50px 0 70px 0;
+        height: 120%;
+        width: 100%;
+        background: #fff;
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        box-shadow: 0px 0px 1em rgb(0, 0, 0, .08);
+        padding: 20px 0 30px 0;
+    }
+
+    .footer-top-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .footer-logo img {
+        margin: 10px;
+    }
+
+    .icon-redes-mobile a {
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+        background: #FCFCFC;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 1em rgb(0, 0, 0, .1);
+    }
+
+    .icon-redes-mobile a img {
+        width: 6vh;
+    }
+
+    .developer-name-mobile cite {
+        font-size: 14px;
+        text-decoration: none;
+        font-style: normal;
+        color: #535353;
+    }
+
+
+}
